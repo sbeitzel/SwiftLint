@@ -29,6 +29,7 @@ let package = Package(
         .plugin(name: "SwiftLintPlugin", targets: ["SwiftLintPlugin"])
     ],
     dependencies: [
+        .package(url: "https://github.com/apple/swift-corelibs-xctest.git", branch: "main"),
         .package(url: "https://github.com/apple/swift-argument-parser.git", .upToNextMinor(from: "1.2.0")),
         .package(url: "https://github.com/apple/swift-syntax.git", revision: "6e3dfb332553ad1462f0a3d45b4d91e349ce4013"),
         .package(url: "https://github.com/jpsim/SourceKitten.git", .upToNextMinor(from: "0.33.1")),
@@ -56,6 +57,7 @@ let package = Package(
         .testTarget(
             name: "CLITests",
             dependencies: [
+                .product(name: "XCTest", package: "swift-corelibs-xctest"),
                 "swiftlint"
             ]
         ),

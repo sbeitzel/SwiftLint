@@ -32,7 +32,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-syntax.git",
       "state" : {
-        "revision" : "6e3dfb332553ad1462f0a3d45b4d91e349ce4013"
+        "revision" : "fd2f742c7bdac60f27685ebdacce146706f1d8ef"
       }
     },
     {

@@ -10,6 +10,24 @@
 
 #### Enhancements
 
+* None.
+
+#### Bug Fixes
+
+* None.
+
+## 0.50.3: Bundle of Towels
+
+#### Breaking
+
+* None.
+
+#### Experimental
+
+* None.
+
+#### Enhancements
+
 * The `SwiftLintPlugin` SwiftPM plugin now uses a prebuilt binary on
   macOS.  
   [Tony Arnold](https://github.com/tonyarnold)
@@ -31,11 +49,21 @@
   `single_test_class` and `empty_xctest_method` rules.  
   [Martin Redington](https://github.com/mildm8nnered)
   [#4200](https://github.com/realm/SwiftLint/issues/4200)
+  
+  * Add `period_spacing` opt-in rule that checks periods are not followed
+  by 2 or more spaces in comments.  
+  [Julioacarrettoni](https://github.com/Julioacarrettoni)
+  [#4624](https://github.com/realm/SwiftLint/pull/4624)
 
 * Show warnings in the console for Analyzer rules that are listed in the
   `opt_in_rules` configuration section.  
   [SimplyDanny](https://github.com/SimplyDanny)
   [#4612](https://github.com/realm/SwiftLint/issues/4612)
+
+* Allow new Quick APIs `aroundEach` and `justBeforeEach`
+  for `quick_discouraged_call`.  
+  [David Steinacher](https://github.com/stonko1994)
+  [#4626](https://github.com/realm/SwiftLint/issues/4626)
 
 #### Bug Fixes
 
@@ -43,15 +71,19 @@
   [SimplyDanny](https://github.com/SimplyDanny)
   [#4612](https://github.com/realm/SwiftLint/issues/4612)
 
-* Skip `defer` statements being last in an `#if` block if the `#if` statement is
-  not itself the last statement in a block.  
+* Skip `defer` statements being last in an `#if` block if the `#if`
+  statement is not itself the last statement in a block.  
   [SimplyDanny](https://github.com/SimplyDanny)
   [#4615](https://github.com/realm/SwiftLint/issues/4615)
 
-* Fix false positives in `empty_enum_arguments` when the called expression
-  is an identifier or an init call.  
+* Fix false positives in `empty_enum_arguments` when the called
+  expression is an identifier or an init call.  
   [Steffen Matthischke](https://github.com/heeaad)
   [#4597](https://github.com/realm/SwiftLint/issues/4597)
+
+* Fix correction issue in `comma` when there was too much whitespace
+  following the comma.  
+  [JP Simard](https://github.com/jpsim)
 
 ## 0.50.1: Artisanal Clothes Pegs Fixup Edition
 

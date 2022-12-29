@@ -2,7 +2,15 @@
 
 #### Breaking
 
-* None.
+* Deprecate the `unused_capture_list` rule in favor of the Swift compiler
+  warning. At the same time, make it an opt-in rule.  
+  [Cyberbeni](https://github.com/Cyberbeni)
+  [#4656](https://github.com/realm/SwiftLint/issues/4656)
+
+* Deprecate the `inert_defer` rule in favor of the Swift compiler warning.
+  At the same time, make it an opt-in rule.  
+  [SimplyDanny](https://github.com/SimplyDanny)
+  [#4615](https://github.com/realm/SwiftLint/issues/4615)
 
 #### Experimental
 
@@ -10,11 +18,21 @@
 
 #### Enhancements
 
-* None.
+* Make forceExclude work with directly specified files.  
+  [jimmya](https://github.com/jimmya)
+  [#issue_number](https://github.com/realm/SwiftLint/issues/4609)
 
 #### Bug Fixes
 
-* None.
+* Fix false positives on `private_subject` rule when using
+  subjects inside functions.  
+  [Marcelo Fabri](https://github.com/marcelofabri)
+  [#4643](https://github.com/realm/SwiftLint/issues/4643)
+
+* Fix for compiler directives masking subsequent `opening_brace`
+  violations.  
+  [Martin Redington](https://github.com/mildm8nnered)
+  [#3712](https://github.com/realm/SwiftLint/issues/3712)
 
 ## 0.50.3: Bundle of Towels
 
